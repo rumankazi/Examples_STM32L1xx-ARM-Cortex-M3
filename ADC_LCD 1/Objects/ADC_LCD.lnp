@@ -1,0 +1,14 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\delay.o"
+".\objects\util.o"
+".\objects\lcd.o"
+".\objects\stm32l1xx_adc.o"
+".\objects\stm32l1xx_dac.o"
+".\objects\stm32l1xx_gpio.o"
+".\objects\stm32l1xx_rcc.o"
+".\objects\startup_stm32l100xc.o"
+".\objects\system_stm32l1xx.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\ADC_LCD.map" -o .\Objects\ADC_LCD.axf
